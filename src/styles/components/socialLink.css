@@ -1,0 +1,78 @@
+.socialLink {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+}
+
+.socialLink .card {
+  width: min(100%, 24rem);
+  margin-inline: auto;
+  padding: 2.5rem;
+  background: var(--clr-grey-800);
+  border-radius: 0.5rem;
+
+  >*+* {
+    margin-block-start: 1.5rem;
+  }
+}
+
+.socialLink .card .card-image {
+  display: grid;
+  justify-items: center;
+
+  & img {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+  }
+}
+
+.socialLink .card .card-header {
+  text-align: center;
+
+  >*+* {
+    margin-block-start: 0.25rem;
+  }
+
+  & .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  & .sub-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--clr-green);
+  }
+}
+
+.socialLink .card .card-body {
+  text-align: center;
+
+  & .text {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}
+
+.socialLink .card .card-footer {
+  display: grid;
+  gap: 0.75rem;
+
+  & .button {
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.75rem;
+    cursor: pointer;
+    width: 100%;
+    background: var(--clr-grey-700);
+    border: 0.125rem solid var(--clr-grey-600);
+    border-radius: 0.5rem;
+
+    &:hover {
+      background: var(--clr-green);
+      color: var(--clr-grey-900);
+    }
+  }
+}
